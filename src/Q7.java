@@ -1,5 +1,12 @@
-/*
- * 7	10001st prime
+/**
+ * Q7>10001st prime
+ * 
+ * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+	What is the 10 001st prime number?
+ * 
+ * output:104743
+ * @author kishoremajji007
+ *
  */
 public class Q7 {
 	private static boolean isPrime(int j) {
@@ -29,7 +36,7 @@ public class Q7 {
 				break;
 			}
 		}
-		System.out.println(max+" max");
+		System.out.println(max);
 	}
 	public static void main(String[] args) {
 		
