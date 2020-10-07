@@ -14,13 +14,16 @@ public class Q5 {
 		int num=0;
 		for(int i=1;i<Integer.MAX_VALUE;i++) {
 			num=n*i;
-			int count=0;
+			boolean flag=true;
+			
 			for(int j=n;j>0;j--) {
-				if(num%j==0) {
-					count++;
+				if(num%j!=0) {
+					flag=false;
+					break;
 				}
+				
 			}
-			if(count==n) {
+			if(flag) {
 				break;
 			}
 		}
