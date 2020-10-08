@@ -14,9 +14,9 @@
 public class Q10 {
 	
 	public static void getPrimeSum(long n) {
-		long sum = 0;
+		long sum = 2;
 		
-		for (long i = 2; i <= n; i++) {
+		for (long i = 3; i < n; i+=2) {
 			if(isPrime(i)) {
 				sum+=i;
 			}
@@ -24,11 +24,11 @@ public class Q10 {
 		System.out.println(sum);
 	}
 	//this method takes O(N)
+
 	public static boolean isPrime(long i2) {
-		if (i2 % 2 == 0) {
-			return false;
-		}
-		for (int i = 3; i < Math.sqrt(i2); i += 2) {
+		
+		
+		for (int i = 3; i <= Math.sqrt(i2); i += 2) {
 			if (i2 % i == 0) {
 				return false;
 			}
@@ -37,8 +37,9 @@ public class Q10 {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 2000000
 		getPrimeSum(2000000);
+		System.out.println(isPrime(2));
 	}
 
 }
